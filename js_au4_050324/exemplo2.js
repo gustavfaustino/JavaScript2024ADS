@@ -1,0 +1,1 @@
+document.write("Testando arquivo externo no JS")
