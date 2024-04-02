@@ -2,16 +2,16 @@ class Operacoes{
     constructor(){
 
     }
-
     Somar(valorA, valorB){
-        console.log("Resultado: " + (valorA+valorB))
+        console.log(valorA + valorB)
     }
 
     Somar(valorA, valorB, valorC){
-        console.log("Resultado: "+ (valorA+valorB+valorC))
+        console.log(valorA + valorB + valorC)
     }
 }
 
-var obj = new Operacoes()
-obj.Somar(10,20)
-obj.Somar(20,20,20)
+var objeto = new Operacoes();
+objeto.Somar(10,15,20)
+
+
