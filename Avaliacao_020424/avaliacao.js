@@ -40,7 +40,7 @@ class Juridica extends Pessoa{
     set pRazSocial(value) {this._pRazSocial = value;}
     imprimir(){
         return super.imprimir() + "\nCNPJ: "+ this._pCnpj +
-            "Razão Social" + this._pRazSocial;
+            "\nRazão Social: " + this._pRazSocial;
     }
 }
 
@@ -56,12 +56,12 @@ class Fisica extends Pessoa{
     set pCpf(value) {this._pCpf = value;}
 
     imprimir() {
-        return super.imprimir() + "CPF: " + this._pCpf +
-            "Data de nascimento: " +this._pNascimento;
+        return super.imprimir() + "\nCPF: " + this._pCpf +
+            "\nData de nascimento: " +this._pNascimento;
     }
 }
 var pFisico = new Fisica("Luiz Gonzaga",
-    "Av. Cu Norte-Sul",
+    "Av. Penetração Norte-Sul",
     "29/02/1994", "242.144.121-02")
 console.log(pFisico.imprimir()+ "\n")
 
@@ -69,3 +69,4 @@ var pJuridico = new Juridica("Lima May",
     "Praia do Arrombado",
     "05.311.244/0001-09",
     "Senhor dos Pastéis tm.")
+console.log(pJuridico.imprimir())
